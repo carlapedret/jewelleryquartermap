@@ -1,432 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
-    <title></title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-</head>
-<body>
-<style>
-body {
-    margin:0;
-    padding:0;
-}
-#map {
-    position: fixed;
-    width: 50%;
-    top: 0;
-    bottom: 0;
-}
-#features {
-    width: 50%;
-    margin-left: 50%;
-    font-family: sans-serif;
-    overflow-y: scroll;
-    background-color: #fafafa;
-}
-section {
-    padding:  80px 50px;
-    line-height: 25px;
-    border-bottom: 1px solid #ddd;
-    opacity: 0.25;
-    font-size: 13px;
-}
-section.active {
-    opacity: 1;
-
-}
-section:last-child {
-    border-bottom: none;
-    margin-bottom: 200px;
-}
-/* Control map popup max-width here */
-.mapboxgl-popup {
-    max-width: 450px;
-    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-.marker-title {
-    font-weight: 700;
-}
-
-h1{
-  font-size: 26.5px;
-}
-
-p {
-  font-size:14px ;
-
-}
-
-}
-</style>
-
-<div id='map'></div>
-<div id='features'>
-    <section id='Jewellery' class='active'>
-        <h1>From factories to fancy restaurants: gentrification in Birmingham’s Jewellery Quarter</h1>
-
-<p>The <b>Jewellery Quarter</b> has all the ingredients to be a vibrant place: a central location, young people, beautiful buildings and trendy bars.</p>
-<p>The neighbourhood is currently undergoing a process of transformation, but the question is: where will this change lead to? Can it put at risk the essence of the Jewellery Quarter?</p>
-
-<p><center><b>Scroll down to start exploring the neighbourhood</b></center></p>
-<center><image src="http://findicons.com/files/icons/2338/reflection/128/arrow_down_4.png"><center>
-<center><a data-flickr-embed="true"  href="https://www.flickr.com/photos/bs0u10e0/6695324879/in/photolist-dFhAsK-zUMK2i-dFo5CG-dFo3AG-dFhFPc-dFuhFJ-dFhAC6-dFo3sJ-dGs26c-dFukj9-dFo3am-b5z47r-nYYp6g-dF6iik-dFqwKu-dF4d7Z-dF2eWB-qGsgyE-dF7DM3-dFqvSC-dGpWAc-dGpXkg-dF5otx-bcDhPR-7kss7P-7kJoxq-dFsH7w-pCupe6-dGpY2M-dFbHVC-dF4FHp-dF1gNc-dGreh9-dGsEfe-dFa58E-dGyFR9-7kwmwQ-qGyYbF-dF7CBC-7kVPDC-nX5Eu1-dFqwYw-7mfRJ5-dFngC4-dFbG2u-7k2zj2-pCqVC2-7kEtPg-dFa7v7-cKx2uw" title="Stormy Times"><img src="https://farm8.staticflickr.com/7174/6695324879_9e9773f0e2_b.jpg" width='550' height='350' alt='Stormy Times'></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></center></script>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jewelleryquartermap by carlapedret</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jewelleryquartermap</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/carlapedret/jewelleryquartermap" class="btn">View on GitHub</a>
+      <a href="https://github.com/carlapedret/jewelleryquartermap/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/carlapedret/jewelleryquartermap/tarball/master" class="btn">Download .tar.gz</a>
     </section>
-    <section id='residents'>
-        <h3>Why to live in the Jewellery Quarter</h3>
-        <center><image src="http://www.carlapedret.cat/wp-content/uploads/2016/04/Carrer-1-e1461285069443.png"></center>
-        <p><b>David Smith</b> and <b>Matthew Bott</b> are two of the 7,000 residents of the Jewellery Quarter.  David, a town planner, is originally from Corby, in Northamptonshire. He arrived at the Jewellery Quarter ten years ago and now lives here with his family. Matthew is from Birmingham and works as a city design manager for a construction company. He has lived in the Jewellery Quarter since 2007. </p>
 
-<p>We meet at the <b>Bryant Priest Newman architects</b>, a modern black building on Mary street. The meeting room is all in white with a minimalist style.</p>
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>I ask Matthew and David why they chose to live in this neighbourhood. The historic background and not to depend on a car are Matthew’s main reason. David says the area has also something different and special that makes you be part of it.</p>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
-<p><center><b>Click on the markers on the map to listen to Matthew and David</b><center></p>
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/carlapedret/jewelleryquartermap">Jewelleryquartermap</a> is maintained by <a href="https://github.com/carlapedret">carlapedret</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
     </section>
-    <section id='people'>
-        <h3>Night clubs and factories</h3>
-        <a data-flickr-embed="true"  href="https://www.flickr.com/photos/ell-r-brown/6777450893/in/photolist-bjUd2B-q6qSiT-qxZMgP-dTD98a-ik12mx-s9m5KF-aa3yZq-a9ZL7z-qQhBSk-a7N93z-dQkgXK-a7Nac6-gd5i8w-f1oiEN-7jRpb9-bjVSs2-dQqSZh-gd5XFx-8ZipH-f1oizh-7GHW2v-bjVUDM-gd5g7Z-dQkiun-gd8Cx6-ik1tDw-a7R4Wo-bjUPTc-a7R3nN-a7N9C4-ik1fFj-CWKXpW-vKbcpZ-a8dkay-s3mCRz-qw6hoM-a7Nh1t-a7Rn2f-6R6tZa-qYfwxt-cDwbr-bDxGVx-6Raw4A-bjVQ2p-dTDa2i-eccQM8-a7R4eu-q34i3v-a728Dq-8YkWUU" title="Subway City - Livery Street, Birmingham"><img src="https://farm8.staticflickr.com/7007/6777450893_72fc99c317.jpg" width="500" height="375" alt="Subway City - Livery Street, Birmingham"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-<p>The transformation of the Jewellery Quarter started some years ago. Back in the 1980s, once the jewellers had closed their workshops at 6 o’clock, the streets were deserted, says <b>Christine Cushing</b>, who worked in the Jewellery Quarter for almost 35 years.</p>
 
-<p>In the 1990s, the factories – some had closed forever – alternated with dark streets and some nightclubs. Beyond <b>St Paul’s Square</b> and the <b>Rose Tavern</b>, there wasn’t any activity. </p>
-
-<p>The industrial past of the area has adapted to the changing times and some old factories have now started a second life. One of the most emblematic is <b>Newman Brothers</b>, today known as Coffin Works. During 100 years a coffin-fittings factory, Newman Brothers is now a museum where the machinery share the space with workshops of artists and a yoga studio. </p>
-
-<p><center><b>Click on the markers on the map to know more about the past of the Jewellery Quarter.</b><center></p>
-        </section>
-    </section>
-    <section id='survey'>
-        <h3>Who lives and works in the Jewellery Quarter?</h3>
-        <image src="http://www.carlapedret.cat/wp-content/uploads/2016/04/Screen-Shot-2016-04-22-at-01.50.00-e1461286261419.png">
-        <p>Little by little the Jewellery Quarter has been opening up to the city. The jewellers are not alone anymore: architects, designers and media companies are the new kids on the block. </p>
-
-<p>And with the change, the first residents arrived. According to a 2010 survey, 44% of the residents lived and worked in the area and more than half of them had an annual gross household income above the national average, i.e. more than £40,000 a year. More than 70% were less than 34 years old. </p>
-
-<p>These young professionals are bringing to the JQ new businesses, coffee shops, hotels and restaurants, but is there a lack of diversity?</p>
-
-<p>Matthew and David, who have lived here for a long time, recognise the neighbourhood is homogeneous in terms of social standing but not in terms of different cultures or ethnicities. </p>
-
-<p><center><b>Click on the marker to know more about the population of the Jewellery Quarter</b><center>.</p>
-
-    </section>
-    <section id='dereliction'>
-        <h3>Dereliction, the big enemy of the neighbourhood</h3>
-        <center><image src="http://www.carlapedret.cat/wp-content/uploads/2016/04/Screen-Shot-2016-04-22-at-01.39.28-e1461285684395.png"></center>
-        <p>The Jewellery Quarter Neighbourhood Plan (JQNP), which has to spread the seed for a thriving future, has numerous challenges. One of the most urgent is to fight dereliction. </p>
-
-<p>You only need to walk 10 minutes through the Jewellery Quarter to find vacant lots or abandoned factories with a “for sale” board. One of the best examples of dereliction in the area is <b>Great Hampton Street</b>, where buildings that were nice in other times alternate with mobile phone shops and failed businesses. </p>
-
-<p>The neighbours want the City Council to sanction irresponsible landlords that wait and wait to sell their properties while some of the buildings are falling down. “It is not the most common situation” says Matthew Bott. The main problem to fight dereliction is the high cost of building restoration. To solve it, the neighbourhood plan looks for solutions to make investment more attractive. </p>
-
-<p>But new constructions are also a problem. According to David Smith, some new developments leave much to be desired in terms of quality and design. For this reason, the neighbours claim a more active role and don’t want to leave all the control of the investments in the hands of the City Council. </p>
-<p><center><b>Click on the marker to know about the singularity of Great Hampton street </b><center>.</p>
-
-    </section>
-    <section id='prices'>
-        <h3>The better the neighbourhood, the higher the prices</h3>
-        <center><image src="http://www.carlapedret.cat/wp-content/uploads/2016/04/Screen-Shot-2016-04-22-at-01.45.49-e1461286003925.png"></center>
-        <p>No one denies that if the Neighbourhood plan works, it will have an impact on property prices. The raise in residential prices is already a fact and the average value is higher than what many people in Birmingham can afford. </p>
-
-<p>However, the pressure seems to be stronger for businesses. The entry of the creative industries has created a competition for space. This “gentrification” of the Jewellery Quarter industry - as David calls it - seems to be unavoidable. </p>
-
-<p>The JQNP seeks to find a balance between new and traditional businesses, but some of them will inevitably have to modernise. That is not only because the price of the rents will increase, but also because they have to adapt to what consumers and the markets want. </p>
-<p><center><b>Click on the marker to know more about the possible effects of the neighbourhood plan</b><center>.</p>
-
-    </section>
-    <section id='future'>
-        <h3>The Jewellery Quarter of the future</h3>
-        <p>¿How do you imagine the JQ in ten years? David and Matthew think about the question in silence. The word “thriving” is one of the first to come out.</p>
-
-<p>David imagines a neighbourhood with more friendly for families and children, with schools and green spaces. Matthew wishes that the Jewellery Quarter will be known not only for the quality of its jewels, but also for being the best place to live in Birmingham.</p>
-
-    </section>
-    <section> </section>
-
-</div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiY2FybGFwZWRyZXQiLCJhIjoiN0Z3aWQ3QSJ9.c8n4S98H7toNcSlMzwwDlQ';
-
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/basic-v8',
-    center: [-1.905656, 52.485116],
-    zoom: 14.5,
-    bearing: -47,
-    pitch: 45
-});
-
-var markers = {
-    "type": "FeatureCollection",
-    "features": [
-    {
-        "type": "Feature",
-        "properties": {
-            "title": "Matthew why",
-            "description": "<div class='marker-title'>A central location and an historic flavour</div> \
-            <p>Matthew Bott is from Birmingham and lives in the Jewellery Quarter since 2007. The privilege to walk to his work place and the special character of the area are his reason to live in the neighbourhood. (Image: Flickr/Roland Turner).</p> \
-            <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259889010&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
-            "marker-symbol": "marker",
-
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [-1.907828, 52.486782]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "title": "David why",
-            "description": "<div class='marker-title'>A place you cannot get away from</div> \
-            <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259900596&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
-          "marker-symbol": "marker"
-
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [-1.907965, 52.486672]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "title": "The neighbourhood 35 years ago",
-            "description": "<div class='marker-title'>The neighbourhood 35 years ago</div> \
-            <p>Christine Cushing worked in the Jewellery Quarter for 35 years. She remembers how the neighbourhood has changed from an industrial area to a vibrant place to live, work and walk around.</p> \
-            <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259976604&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe> ",
-            "marker-symbol": "marker"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [-1.903168, 52.483828]
-        }
-},
-{
-"type": "Feature",
-"properties": {
-"title": "Coffin works",
-"description": "<div class='marker-title'>Newman Brothers, the last coffin fitting factory</div> \
-<p>Listen to Sarah Hayes, exhibitions Manager for the Coffin Works, to know how a victorian factory worked.</p> \
-<iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259196377&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
-"marker-symbol": "marker"
-},
-"geometry": {
-"type": "Point",
-"coordinates": [-1.906006, 52.482903]
-}
-},
-{
-"type": "Feature",
-"properties": {
-  "title": "Homogeneo",
-  "description": "<div class='marker-title'>How are the people who live in the Jewellery Quarter?</div> \
-<p>Matthew Bott,resident in the area, tells his thoughts about the diversity of the neighbourhood.</p> \
-  <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259911088&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
-  "marker-symbol": "marker"
-  },
-  "geometry": {
-  "type": "Point",
-  "coordinates": [-1.911251, 52.487314]
-}
-},
-{
-"type": "Feature",
-"properties": {
-  "title": "Great Hampton",
-  "description": "<div class='marker-title'>The consequences of dereliction</div> \
-  <p>David Smith, town planner and Jeweller Quarter resident, talks about Great Hampton street main problems and the difficulties to make the street prosperous.</p> \
-  <iframe width='100%' height='275' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259909423&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
-  "marker-symbol": "marker"
-  },
-  "geometry": {
-  "type": "Point",
-  "coordinates": [-1.909818, 52.490520]
-}
-},
-{
-"type": "Feature",
-"properties": {
-"title": "New flats",
-"description": "<div class='marker-title'>New flats for new residents</div> \
-<p>What would be the effects of the neighbourhood plan?</p> \
-<iframe width='100%' height='450' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/259912999&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'></iframe>",
-"marker-symbol": "marker"
-},
-"geometry": {
-"type": "Point",
-"coordinates": [-1.906900, 52.485730]
-}
-}]
-};
-
-map.on('style.load', function () {
-    map.addSource('maine', {
-        'type': 'geojson',
-        'data': {
-            'type': 'Feature',
-            'properties': {
-                'name': 'Maine',
-            },
-            'geometry': {
-                'type': 'Polygon',
-                'coordinates': [[[-1.910634,52.482335],
-                [-1.90838,52.481591],
-                [-1.907994,52.481669],
-                [-1.906793,52.481368],
-                [-1.905291,52.48095],
-                [-1.900881,52.484198],
-                [-1.90086,52.484243],
-                [-1.90087,52.484233],
-                [-1.900945,52.484152],
-                [-1.90087,52.484224],
-                [-1.900876,52.484247],
-                [-1.901235,52.484439],
-                [-1.901546,52.484678],
-                [-1.902801,52.485498],[-1.901214,52.486621],[-1.902136,52.487745],[-1.903123,52.487366],[-1.903295,52.487249],[-1.905291,52.487889],[-1.906621,52.488379],[-1.906331,52.489398],[-1.908724,52.49107],[-1.909046,52.490901],[-1.909561,52.491234],[-1.909958,52.491573],[-1.909646,52.491724],[-1.910172,52.492129],[-1.910794,52.491737],[-1.911084,52.49192],[-1.911513,52.491684],[-1.91294,52.493004],[-1.913444,52.492756],[-1.913337,52.49224],[-1.913884,52.492187],[-1.914067,52.491894],[-1.914539,52.49175],[-1.914775,52.491632],[-1.915022,52.491789],[-1.915354,52.491789],[-1.915676,52.491417],[-1.916373,52.490352],[-1.912736,52.489529],[-1.912747,52.488588],[-1.916738,52.489457],[-1.917843,52.486739],[-1.919324,52.484871],[-1.918487,52.484191],[-1.916792,52.483185],[-1.913895,52.482231],[-1.910634,52.482335]]]
-            },
-        }
-    });
-
-    map.addLayer({
-        'id': 'route',
-        'type': 'fill',
-        'source': 'maine',
-        'layout': {},
-        'paint': {
-            'fill-color': '#FFC0CB',
-            'fill-opacity': 0.5
-        }
-    });
-});
-
-map.on('style.load', function () {
-    // Add marker data as a new GeoJSON source.
-    map.addSource("markers", {
-        "type": "geojson",
-        "data": markers
-    });
-
-    // Add a layer showing the markers.
-    map.addLayer({
-        "id": "markers",
-        "type": "symbol",
-        "source": "markers",
-        "layout": {
-            "icon-image": "{marker-symbol}-15",
-            "icon-allow-overlap": true
-        }
-    });
-});
-
-// When a click event occurs near a marker icon, open a popup at the location of
-// the feature, with description HTML from its properties.
-map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
-
-    if (!features.length) {
-        return;
-    }
-
-    var feature = features[0];
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    var popup = new mapboxgl.Popup()
-        .setLngLat(feature.geometry.coordinates)
-        .setHTML(feature.properties.description)
-        .addTo(map);
-});
-
-// Use the same approach as above to indicate that the symbols are clickable
-// by changing the cursor style to 'pointer'.
-map.on('mousemove', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
-    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-});
-
-var chapters = {
-    'Jewellery': {
-        bearing: 0,
-        center: [0, 0],
-        zoom: 100,
-        pitch: 20
-    },
-    'residents': {
-        duration: 8500,
-        center: [-1.907926, 52.486651],
-        bearing: 57,
-        zoom: 25,
-        pitch: 35
-    },
-    'people': {
-        bearing: 10,
-        center: [-1.905137, 52.483067],
-        zoom: 17,
-        speed: 0.7,
-        pitch: 0
-    },
-    'survey': {
-        bearing:10,
-        center: [-1.911251, 52.487314],
-        speed: 0.4,
-        zoom: 17,
-        pitch:10
-    },
-    'dereliction': {
-        bearing: -35,
-        center: [-1.909818, 52.490520],
-        zoom: 16,
-        pitch: 20,
-        speed: 0.5
-    },
-    'prices': {
-        bearing: -35,
-        center: [-1.905814, 52.485168],
-        zoom: 16.7,
-        pitch:20,
-        speed: 0.5
-    },
-    'future': {
-        bearing: 90,
-        center: [-1.912564, 52.487040],
-        zoom: 17.3,
-        pitch: 40
-    }
-};
-
-// On every scroll event, check which element is on screen
-window.onscroll = function() {
-    var chapterNames = Object.keys(chapters);
-    for (var i = 0; i < chapterNames.length; i++) {
-        var chapterName = chapterNames[i];
-        if (isElementOnScreen(chapterName)) {
-            setActiveChapter(chapterName);
-            break;
-        }
-    }
-};
-
-var activeChapterName = 'Jewellery';
-function setActiveChapter(chapterName) {
-    if (chapterName === activeChapterName) return;
-
-    map.flyTo(chapters[chapterName]);
-
-    document.getElementById(chapterName).setAttribute('class', 'active');
-    document.getElementById(activeChapterName).setAttribute('class', '');
-
-    activeChapterName = chapterName;
-}
-
-function isElementOnScreen(id) {
-    var element = document.getElementById(id);
-    var bounds = element.getBoundingClientRect();
-    return bounds.top < window.innerHeight && bounds.bottom > 0;
-}
-</script>
-</body>
+  
+  </body>
 </html>
